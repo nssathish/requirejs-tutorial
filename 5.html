@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>define function</title>
+</head>
+<body>
+	<script type="text/javascript" data-main="js/config" src="require.js"></script> <!-- this is an asynchronous call
+	require.js is first called ) then the config file is loaded asynchronously -->
+	<script> alert("before require keyword"); </script>
+	<script>
+			require(['config'], function() {
+				alert("after require keyoword");
+			});	
+	</script>
+</body>
+</html>
