@@ -10,7 +10,8 @@
 	<script> alert("before require keyword"); </script>
 	<script>
 			require(['config'], function() {
-				alert("after require keyoword");
+				require(['customscripts/jqueryfile'], function() {
+				});
 			});	
 	</script>
 </body>
