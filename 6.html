@@ -1,0 +1,18 @@
+<!DOCTTYPE html>
+<html lang='en'>
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction to AMD</title>
+</head>
+<body>
+	<!-- Asynchronous Module Definition -->
+	<button id="clickMe">Asynchronous Module Definition</button>
+	<script data-main="js/config" src="require.js"></script>
+	<script>
+		require(['config'],function () {
+			require(['customscripts/jqueryfile'],function () {
+			});
+		});
+	</script>
+</body>
+</html>
